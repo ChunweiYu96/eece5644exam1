@@ -42,7 +42,7 @@ MAP4 = reshape(MAPK4,100,100);
 figure(1);
 figure(1),scatter(xi(1),yi(1),'ob'), hold on,
 figure(1),scatter(xt,yt,'+g'), hold on
-figure(1),contour(xmap,ymap,MAP1,20,'showtext','on'); 
+figure(1),contour(xmap,ymap,MAP1,'showtext','on'); 
 legend('Reference Points','True Point','MAP'), 
 title('MAP Estimator Contour'),
 xlabel('x'), ylabel('y')
@@ -72,7 +72,7 @@ figure(4),scatter(xi(2),yi(2),'or'), hold on,
 figure(4),scatter(xi(3),yi(3),'or'), hold on,
 figure(4),scatter(xi(4),yi(4),'or'), hold on,
 figure(4),scatter(xt,yt,'+g'), hold on
-figure(4),contour(xmap,ymap,MAP4,20,'showtext','on'); 
+figure(4),contour(xmap,ymap,MAP4,'showtext','on'); 
 legend('Reference Point','Reference Point','Reference Point','Reference Point','True Point','MAP'), 
 title('MAP Estimator Contour'),
 xlabel('x'), ylabel('y')
